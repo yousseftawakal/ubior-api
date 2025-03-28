@@ -38,6 +38,10 @@ const userSchema = new mongoose.Schema(
       enum: ['user', 'admin'],
       default: 'user',
     },
+    private: {
+      type: Boolean,
+      default: false,
+    },
     items: [
       {
         type: mongoose.Schema.ObjectId,
